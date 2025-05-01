@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -13,67 +15,75 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        android:elevation="4dp"/>
-    
+        android:elevation="4dp"
+        android:title="Cadastro de Usuário"
+        android:titleTextColor="@android:color/white" />
+
     <EditText
         android:id="@+id/editTextNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Digite seu nome"
-        android:inputType="text"/>
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/editTextSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Digite sua senha"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/editTextConfirmacaoSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Repita sua senha"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:textAlignment="center" />
 
     <RadioGroup
         android:id="@+id/radioGroupSexo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/radioButtonMasc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masculino"/>
+            android:text="Masculino" />
+
         <RadioButton
             android:id="@+id/radioButtonFem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Feminino"/>
+            android:text="Feminino" />
     </RadioGroup>
 
     <CheckBox
         android:id="@+id/checkboxEstudante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estudante"/>
+        android:text="Estudante" />
 
     <CheckBox
         android:id="@+id/checkbosEstagiario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estagiário"/>
+        android:text="Estagiário" />
 
     <CheckBox
         android:id="@+id/checkboxProfissional"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profissional"/>
+        android:text="Profissional" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doador de sangue ?"/>
+        android:text="Doador de sangue?" />
 
     <ToggleButton
         android:id="@+id/toggleButtonDoador"
@@ -81,17 +91,19 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:textOn="Doador"
-        android:textOff="Não Doador"/>
+        android:textOff="Não Doador" />
 
     <Button
         android:id="@+id/buttonCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastrar"/>
+        android:text="Cadastrar"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

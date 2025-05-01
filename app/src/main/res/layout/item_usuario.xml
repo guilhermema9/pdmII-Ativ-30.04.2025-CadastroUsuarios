@@ -2,36 +2,147 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:divider="@android:color/darker_gray"
+    android:showDividers="middle">
 
-    <TextView
-        android:id="@+id/textViewNome"
+    <!-- Nome -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/textViewSexo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#000000" />
 
-    <TextView
-        android:id="@+id/textViewEstudante"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textViewNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#444444" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewEstagiario"
+    <!-- Sexo -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/textViewProfissional"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sexo:"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#000000" />
 
-    <TextView
-        android:id="@+id/textViewDoador"
+        <TextView
+            android:id="@+id/textViewSexo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#444444" />
+    </LinearLayout>
+
+    <!-- Estudante -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Estudante:"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewEstudante"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#444444" />
+    </LinearLayout>
+
+    <!-- Estagiário -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Estagiário:"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewEstagiario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#444444" />
+    </LinearLayout>
+
+    <!-- Profissional -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Profissional:"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewProfissional"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#444444" />
+    </LinearLayout>
+
+    <!-- Doador -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Doador:"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewDoador"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#444444" />
+    </LinearLayout>
 
 </LinearLayout>
